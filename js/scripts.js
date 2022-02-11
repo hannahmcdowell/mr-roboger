@@ -9,7 +9,12 @@ function beepBoop(input) {
   }
   const array = new Array(parseInt(input) + 1);
   for(let i = 0; i < array.length; i++) {
-    array[i] = i;
+    const element = i.toString();
+    if(element.includes("1")) {
+      array[i] = "Beep!";
+    } else {
+      array[i] = element;
+    }
   }
   return array.join(", ")
 }
