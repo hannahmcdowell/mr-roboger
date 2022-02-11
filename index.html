@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <img src="img/robot.png" alt="Picture of robot">
+      <img id="robot" src="img/robot.png" alt="Picture of robot">
       <h1 class="display-4">Welcome to Mr. Roboger's Neighborhood</h1>
       <p class="lead">Mr. Roboger will *roboticize* any number for you.</p>
       <hr class="my-4">
@@ -28,6 +28,13 @@
       </div>
       <button class="btn btn-custom" type="submit">Submit</button>
     </form>
+    <div id="output-card" class="card">
+      <img src="img/blur.png" class="card-img-top" alt="Blue and green circles">
+      <div class="card-body">
+        <h5 class="card-title">Mr. Roboger says:</h5>
+        <p id="output" class="card-text"></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
