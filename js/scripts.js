@@ -10,7 +10,11 @@ function beepBoop(input) {
   const array = new Array(parseInt(input) + 1);
   for(let i = 0; i < array.length; i++) {
     const element = i.toString();
-    if(element.includes("1")) {
+    if(element.includes("3")) {
+      array[i] = "Won't you be my neighbor?";
+    } else if(element.includes("2")) {
+      array[i] = "Boop!"
+    } else if(element.includes("1")) {
       array[i] = "Beep!";
     } else {
       array[i] = element;
@@ -18,3 +22,5 @@ function beepBoop(input) {
   }
   return array.join(", ")
 }
+
+console.log(beepBoop("13"));
