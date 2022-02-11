@@ -11,8 +11,16 @@
   <div class="container">
     <h1>Welcome to Mr. Roboger's Neighborhood</h1>
     <form id="formOne" class="mb-3">
-      <label for="favNumber" class="form-label">Please enter your favorite positive integer below:</label>
-      <input id="favNumber" class="form-control" type="text">
+      <div class="row form-group">
+        <div class="col">
+          <label for="name" class="form-label">Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="col">
+          <label for="favNumber" class="form-label">Enter a positive integer below:</label>
+          <input id="favNumber" class="form-control" type="text">
+        </div>
+      </div>
       <button class="btn btn-primary" type="submit">Submit</button>
     </form>
   </div>
