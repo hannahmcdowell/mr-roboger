@@ -5,3 +5,15 @@ img {
   height: auto;
   margin-right: 2em;
 }
+
+.btn-custom {
+  color: #fff;
+  background-color: rgb(84, 196, 199);
+  border-color: rgb(84, 196, 199);
+}
+
+.btn-custom:hover {
+  color: #fff;
+  background-color: rgb(61, 134, 132);
+  border-color: rgb(61, 134, 132);
+}
