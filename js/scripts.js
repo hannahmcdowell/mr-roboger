@@ -3,8 +3,13 @@
 
 function beepBoop(input) {
   regex = new RegExp("\\D");
-  if(input.trim().search(regex) >= 0) {
+  input = input.trim();
+  if(input.search(regex) >= 0 || input.length === 0) {
     return "";
   }
+  const array = new Array(parseInt(input) + 1);
+  for(let i = 0; i < array.length; i++) {
+    array[i] = i;
+  }
+  return array.join(", ")
 }
-
