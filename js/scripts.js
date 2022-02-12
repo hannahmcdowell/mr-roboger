@@ -23,7 +23,6 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     $("#invalid-input-card").hide();
-    $("#output-card").hide();
     const userName = $("#name").val().trim();
     const userNum = $("#number").val().trim();
     $("input[id=name]").val("");
@@ -32,9 +31,16 @@ $(document).ready(function() {
     if(userName==="" || output==="") {
       $("#invalid-input-card").show();
     } else {
-      $("span[id=greeting]").text(userName);
-      $("p[id=beepBoopOutput").text(output);
+      $("#greeting").text(userName);
+      $("#beepBoopOutput").text(output);
+      $("#formOne").hide();
       $("#output-card").show();
+      $("#playAgain").show();
     }
+  });
+  $("#playAgain").click(function() {
+    $("#output-card").hide();
+    $("#playAgain").hide();
+    $("#formOne").show();
   });
 });
