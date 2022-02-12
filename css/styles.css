@@ -5,8 +5,8 @@ body {
 img#robot {
   float: left;
   border-radius: 30%;
-  width: 20%;
-  height: auto;
+  max-height: 178px;
+  width: auto;
   margin-right: 2em;
 }
 
