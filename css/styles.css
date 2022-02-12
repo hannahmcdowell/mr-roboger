@@ -24,9 +24,15 @@ img#robot {
 
 #output-card {
   display: none;
+  margin-bottom: 1rem;
 }
 
 #invalid-input-card {
   background-color: #ffcccb; 
+  display: none;
+  margin-bottom: 1rem;
+}
+
+#playAgain {
   display: none;
 }
