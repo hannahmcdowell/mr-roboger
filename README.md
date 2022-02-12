@@ -28,7 +28,7 @@ This webpage takes the user's name and a postive integer as input. The robot, Mr
 When the user leaves fields blank, the website does not highlight the specific fields that they need to complete.
 
 ## Link
-Click [here]() to find the website on GitHub pages.
+Click [here](https://hannahmcdowell.github.io/mr-roboger/) to find the website on GitHub pages.
 
 ## Tests:
 
