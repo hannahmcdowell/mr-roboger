@@ -1,10 +1,10 @@
 function beepBoop(input) {
   input = input.trim();
-  regex = new RegExp("\\D");
+  const regex = new RegExp("\\D");
   if(input.length === 0 || input.search(regex) >= 0) {
     return "";
   }
-  const array = new Array(parseInt(input) + 1);
+  let array = new Array(parseInt(input) + 1);
   for(let i = 0; i < array.length; i++) {
     const element = i.toString();
     if(element.includes("3")) {
@@ -19,3 +19,11 @@ function beepBoop(input) {
   }
   return array.join(", ")
 }
+
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    event.preventDefault();
+    const userName = $("#name").val();
+    const userNum = $("#number").val();
+  });
+});
