@@ -22,13 +22,19 @@ function beepBoop(input) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
+    $("#invalid-input-card").hide();
+    $("#output-card").hide();
     const userName = $("#name").val().trim();
     const userNum = $("#number").val().trim();
     $("input[id=name]").val("");
     $("input[id=number]").val("");
     const output = beepBoop(userNum);
-    $("span[id=greeting]").text(userName);
-    $("p[id=beepBoopOutput").text(output);
-    $("#output-card").show();
+    if(userName==="" || output==="") {
+      $("#invalid-input-card").show();
+    } else {
+      $("span[id=greeting]").text(userName);
+      $("p[id=beepBoopOutput").text(output);
+      $("#output-card").show();
+    }
   });
 });

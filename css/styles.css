@@ -21,3 +21,8 @@ img#robot {
 #output-card {
   display: none;
 }
+
+#invalid-input-card {
+  background-color: #ffcccb; 
+  display: none;
+}
