@@ -1,5 +1,4 @@
 function beepBoop(input) {
-  input = input.trim();
   const regex = new RegExp("\\D");
   if(input.length === 0 || input.search(regex) >= 0) {
     return "";
@@ -23,7 +22,13 @@ function beepBoop(input) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const userName = $("#name").val();
-    const userNum = $("#number").val();
+    const userName = $("#name").val().trim();
+    const userNum = $("#number").val().trim();
+    $("input[id=name]").val("");
+    $("input[id=number]").val("");
+    const output = beepBoop(userNum);
+    $("span[id=greeting]").text(userName);
+    $("p[id=beepBoopOutput").text(output);
+    $("#output-card").show();
   });
 });
